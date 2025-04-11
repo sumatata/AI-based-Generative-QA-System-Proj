@@ -19,3 +19,9 @@ Technologies Used
 Language Models: GPT-2 and T5.
 Libraries: Hugging Face Transformers, PyTorch/TensorFlow, Scikit-learn.
 Deployment:Streamlit.
+
+## 📂 Contents
+
+- `email_ui19.py`:  Streamlit app for taking email content as input and generating a subject line. Simple, interactive UI for quick testing and deployment.
+- `email.ipynb`:   Jupyter Notebook containing the core logic for fine-tuning the BART, processing input text, and generating context-aware subject lines using NLP techniques.
+

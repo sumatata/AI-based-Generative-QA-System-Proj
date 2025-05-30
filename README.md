@@ -1,27 +1,38 @@
-# AI-based-Generative-QA-System-Public-Code-Issues-Pull-requests-Actions-Proj
-Project overview: This project is designed to provide participants with hands-on experience in working with generative text systems using GPT models. It involves two distinct yet interconnected tasks: Email Subject Line Generation and Question Answering on AIML Queries. Participants will gain practical exposure to key aspects of generative NLP, including dataset curation, model fine-tuning, implementation, and deployment.
-Tasks: 
-1. Email Subject Line Generation
-Objective: Generate concise and meaningful email subject lines by abstracting the most salient sentences from the email body.
-Key Highlights:
-Focus on an uncommon text generation task that differs from traditional headline or news summarization.
-Fine-tune any GPT-2 variant model for the task.
-Learn to evaluate the quality of text generation using various metrics.
-Outcome: A fine-tuned generative model capable of producing concise email subject lines.
-2. Question Answering on AIML Queries
-Objective: Develop a domain-specific GPT model fine-tuned to answer questions related to the AIML course.
-Key Highlights:
-Curate a new, domain-relevant dataset tailored for AIML queries.
-Fine-tune the model to enhance its expertise in the AIML domain.
-Test the model's performance on unseen, related questions.
-Outcome: A trained QA model capable of producing accurate, context-specific answers for AIML queries
-Technologies Used
-Language Models: GPT-2 and T5.
-Libraries: Hugging Face Transformers, PyTorch/TensorFlow, Scikit-learn.
-Deployment:Streamlit.
+AI-based Generative Email Subject Line System
 
-## 📂 Contents
+This project develops and evaluates an AI-powered system that generates subject lines from email body content using natural language processing (NLP). The goal is to assist in summarizing and labeling emails by automatically proposing concise and relevant subject lines.
 
-- `email_ui19.py`:  Streamlit app for taking email content as input and generating a subject line. Simple, interactive UI for quick testing and deployment.
-- `email.ipynb`:   Jupyter Notebook containing the core logic for fine-tuning the BART, processing input text, and generating context-aware subject lines using NLP techniques.
+Project Structure
+	•	email.ipynb: Main Jupyter notebook for preprocessing, modeling, and evaluation
+	•	email_ui19.py: Script containing UI logic for visualizing and comparing results
+  - [Dataset Folder](https://drive.google.com/drive/folders/1O9JKxKKLPeFH-ZMQTC9MmXnynLYi8UcR?usp=sharing)  
+  - [Model Folder](https://drive.google.com/drive/folders/1cRVukm2uhfxyHd7nKjqTQXTddLyReLmO?usp=drive_link)
 
+ Features
+	•	Parses raw email body and generates subject lines using text summarization techniques
+	•	Evaluates generated subjects against human-written annotations using:
+	•	ROUGE
+	•	BLEU
+	•	METEOR
+	•	Supports comparison across multiple annotators (ann0, ann1, ann2)
+	•	Outputs quality metrics for generated vs. human subjects
+
+ Requirements
+	•	Python 3.10+
+	•	Jupyter Notebook or Colab
+	•	Transformers, NLTK, Pandas, Scikit-learn
+	•	ROUGE, METEOR, BLEU metric libraries
+
+ How to Run
+	1.	Clone the repo and navigate into it
+	2.	Open email.ipynb in Jupyter/Colab
+	3.	Follow cells to:
+	•	Mount Google Drive (if using Colab)
+	•	Load dataset
+	•	Generate subject lines
+	•	Evaluate against annotations
+
+📊 Output
+	•	Model-generated subject lines
+	•	Evaluation scores (ROUGE-1/2/L, BLEU, METEOR)
+	•	Side-by-side comparison with human-written subjects

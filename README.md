@@ -32,7 +32,7 @@ Project Structure
 	•	Generate subject lines
 	•	Evaluate against annotations
 
-📊 Output
+Output
 	•	Model-generated subject lines
 	•	Evaluation scores (ROUGE-1/2/L, BLEU, METEOR)
 	•	Side-by-side comparison with human-written subjects

@@ -3,14 +3,14 @@ AI-based Generative Email Subject Line System
 This project develops and evaluates an AI-powered system that generates subject lines from email body content using natural language processing (NLP). The goal is to assist in summarizing and labeling emails by automatically proposing concise and relevant subject lines.
 
 Project Structure
-	•	email.ipynb: Main Jupyter notebook for preprocessing, modeling, and evaluation
-	•	email_ui19.py: Script containing UI logic for visualizing and comparing results
+	•	email.ipynb: Main Jupyter notebook for preprocessing, modeling, and evaluation.
+	•	email_ui19.py: Script containing UI logic for visualizing and comparing results.
   - [Dataset Folder](https://drive.google.com/drive/folders/1O9JKxKKLPeFH-ZMQTC9MmXnynLYi8UcR?usp=sharing)  
   - [Model Folder](https://drive.google.com/drive/folders/1cRVukm2uhfxyHd7nKjqTQXTddLyReLmO?usp=drive_link)
 
- Features
-	•	Parses raw email body and generates subject lines using text summarization techniques
-	•	Evaluates generated subjects against human-written annotations using:
+ Features:
+ 	- Parses raw email body and generates subject lines using text summarization techniques
+  	- Evaluates generated subjects against human-written annotations using:
 	•	ROUGE
 	•	BLEU
 	•	METEOR
